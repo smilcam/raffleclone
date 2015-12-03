@@ -289,14 +289,15 @@ a:active{background-color:transparent;}
 	overflow:hidden;
 }
 .add-nav li{
-	float:left;
-	width:14.284%;
+    /*TODO - Give me a precise width of 14.284% */
+    /*TODO - float each list item here left*/
 }
 .add-nav a{
-	display:block;
-	position:relative;
+    /*TODO - The first element inside each 'active' was a link.  Make this a selector block display so they stack underneath eachother*/
 	color:#fff;
 	cursor:pointer;
+    /*TODO - Again, this is relative with no location properties (no top, bottom, left, or right) so our aboslute child looks correct.  Comment this out and see what it looks like*/
+    position: relative;
 }
 .add-nav img{
 	width:100%;
@@ -317,11 +318,13 @@ a:active{background-color:transparent;}
 	background:#b32017;
 	background-image:none;
 	background-color:rgba(159, 23, 14, 0.8);
-	opacity:1;
+    /*TODO: Change the opacity to 1*/
+	opacity:0;
 }
 .add-nav .active .description,
 .add-nav a:hover .description{display:block;}
-.add-nav .active a:hover .description{display:none;}
+/*TODO - Select the the add-nav class with a descendant of active (class) with a descendant of a:hover (element) with a descendant of description (class)
+    Give it a display of none*/
 .add-nav .holder{
 	display:table;
 	width:100%;
