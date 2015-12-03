@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
 	v2.0 | 20110126
 	License: none (public domain)
 */
@@ -11,8 +11,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video{
 	margin:0;
@@ -23,7 +23,7 @@ time, mark, audio, video{
 	vertical-align:baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section{display: block;}
 * {font-size:100.01%;}
 html{font-size:62.5%;}
@@ -75,7 +75,7 @@ a:active{background-color:transparent;}
 	overflow:hidden;
 	width:100%;
 	position:relative;
-	
+
 	max-width:1440px;
 	margin:auto;
 }
@@ -948,10 +948,10 @@ a:active{background-color:transparent;}
 }
 .logo-list img{vertical-align:middle;}
 /* bottom-nav */
-#go-top{ 
-    display:none; 
+#go-top{
+    display:none;
     }
-#go-top a{ 
+#go-top a{
     padding:0 20px 0 20px;
     }
 .bottom-nav{
@@ -1034,7 +1034,7 @@ a:active{background-color:transparent;}
 .share-block .title a:hover{
     text-decoration:none;
     background:url(/content/icons.png) no-repeat 0 -493px;
- 
+
 }
 .buy-block .title a:hover{
     text-decoration:none;
@@ -1693,7 +1693,7 @@ a:active{background-color:transparent;}
 }
 .mobile-block .text-section p{margin:0 0 30px;}
 .addthis_toolbox {border-bottom:solid #dddddd 1px; padding:10px 0 20px 0;}
-.addthis_toolbox a {margin:0 15px 0 0;} 
+.addthis_toolbox a {margin:0 15px 0 0;}
 .error {color: #b22217;}
 .price-list{
 	position:absolute;
@@ -1830,6 +1830,12 @@ This looks like this:
 		Set the font-size to 24px
 		Set the line-height to 27px
 } */
+@media only screen and (max-width: 1330px) {
+.home .add-nav em{
+	font-size: 24px;
+	line-height: 27px;
+	}	
+}
 
 #wuf-adv { display: none !important; }
 
