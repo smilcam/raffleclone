@@ -360,7 +360,7 @@ a:active{background-color:transparent;}
 	position:relative;
 	z-index:2;
 	min-height:783px;
-	overflow:hidden;
+    /*TODO - Hide any overflow or we'll go down too far*/
 }
 /* info-holder */
 .info-holder{
@@ -369,7 +369,7 @@ a:active{background-color:transparent;}
 	margin:0 auto;
 }
 .home .info-holder{
-	padding: 0 0 363px 26px;
+    /* TODO- The text is not in the right position.  Add padding 0 top, 0 right, 363 bottom, 26 left */
 	max-width:890px;
 }
 .info-holder .heading{
@@ -395,14 +395,14 @@ a:active{background-color:transparent;}
 	overflow:hidden;
 }
 .picture-block .text{
-	display:inline-block;
+    /* TODO - Our images are stacked vertically.  Change their display so they stack horizontally */
 	vertical-align:middle;
 	max-width:280px;
 	font-size:2.3em;
 	line-height:1em;
-	font-weight:300;
+    /* TODO - Add a font weight of 300 */
 	text-align:left;
-	color:#fff;
+	/* TODO - Make the font color white */
 }
 .picture-block img{
 	display:inline-block;
@@ -957,7 +957,7 @@ a:active{background-color:transparent;}
     padding:0 20px 0 20px;
     }
 .bottom-nav{
-	position:fixed;
+	/* TODO - Fix the bottom nav's position */
 	left:0;
 	bottom:0;
 	z-index:35;
@@ -1040,7 +1040,7 @@ a:active{background-color:transparent;}
 }
 .buy-block .title a:hover{
     text-decoration:none;
-    background:url(/content/icons.png) no-repeat 0 -610px;
+    /* TODO - Change the background here to be a url '/content/icons.png' , Also: no-repeat 0 -610px;*/
 }
 .home .buy-block .title a{
 	background:url(/content/icon-mail.png) no-repeat 0 11px;
@@ -1797,8 +1797,8 @@ a:active{background-color:transparent;}
 	margin:0 7px 0 0;
 }
 .multi-ticket-list .mark{
-	font-size:48px;
-	line-height:52px;
+	/*TODO - Make the font-size equal to 48*/
+    /*TODO - We want a static line height of 52 pixels*/
 	font-weight:300;
 	margin:0 7px 0 0;
 }
@@ -1807,12 +1807,12 @@ a:active{background-color:transparent;}
 	min-width:27px;
 	min-height:27px;
 	font-weight:bold;
-	background:#000;
-	border-radius:50%;
+	/*TODO - Make the background black (#000) */
+    /*TODO - Add a border-radius of 50% */
 	overflow:hidden;
 	color:#fff;
 	text-transform:none;
-	box-sizing:border-box;
+	/*TODO - add a box-sizing with a value of border-box*/
 	text-align:center;
 	margin-left:35px;
 }
