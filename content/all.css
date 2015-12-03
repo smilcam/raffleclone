@@ -1695,25 +1695,23 @@ a:active{background-color:transparent;}
 .addthis_toolbox a {margin:0 15px 0 0;} 
 .error {color: #b22217;}
 .price-list{
-	position:absolute;
-	right:174px;
-	bottom:52px;
+    /*TODO - Position this absolutely.  Right 174px.  bottom: 52px*/
 	margin:0 -80px 0 0;
 	padding:0;
 	font-size:16px;
 	line-height:19px;
-	text-transform:uppercase;
-	list-style:none;
+	/*TODO - text-transform with a value of uppercase will make this text always be uppercase*/
+	/*TODO - no bullet points - Hint: say none to, list-style*/
 	text-align:right;
 	overflow:hidden;
 }
 .price-list li{
-	display:inline-block;
+	/*TODO - li items are display block by default.  We want these to stack horizontally*/
 	vertical-align:middle;
 	margin:0 81px 0 0;
 }
 .price-list .price{
-	display:block;
+	/*TODO - Now that we're inside a list item, let's go back to block display so items move down to new lines*/
 	font-size:48px;
 	line-height:48px;
 	font-weight:bold;
