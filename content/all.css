@@ -120,8 +120,8 @@ a:active{background-color:transparent;}
 .header-frame,
 .header-area{
 	max-width:1000px;
-	/*TODO - We need some margin! - a value of 0 auto will tell the margin to auto calculate*/
-	/*TODO - We have some absolute children, so we need to set our position to relative*/
+	margin:0 auto;
+	position:relative;
 	z-index:20;
 }
 .header-frame{min-height:550px;}
@@ -192,12 +192,13 @@ a:active{background-color:transparent;}
 }
 /* nav-block */
 .nav-block{
-	/*TODO: Add the appropriate position - 70px*/
+	position:fixed;
+	top:70px;
 	margin:0 0 0 10px;
 	z-index:2;
 	width:182px;
 	background:url(/content/bg-nav-block.png) no-repeat;
-	/*TODO: Let's add some padding to the top - 52px worth*/
+	padding:52px 0 0;
 	opacity:0.8;
 }
 .nav-block .holder{
@@ -289,15 +290,14 @@ a:active{background-color:transparent;}
 	overflow:hidden;
 }
 .add-nav li{
-    /*TODO - Give me a precise width of 14.284% */
-    /*TODO - float each list item here left*/
+	float:left;
+	width:14.284%;
 }
 .add-nav a{
-    /*TODO - The first element inside each 'active' was a link.  Make this a selector block display so they stack underneath eachother*/
+	display:block;
+	position:relative;
 	color:#fff;
 	cursor:pointer;
-    /*TODO - Again, this is relative with no location properties (no top, bottom, left, or right) so our aboslute child looks correct.  Comment this out and see what it looks like*/
-    position: relative;
 }
 .add-nav img{
 	width:100%;
@@ -318,13 +318,11 @@ a:active{background-color:transparent;}
 	background:#b32017;
 	background-image:none;
 	background-color:rgba(159, 23, 14, 0.8);
-    /*TODO: Change the opacity to 1*/
-	opacity:0;
+	opacity:1;
 }
 .add-nav .active .description,
 .add-nav a:hover .description{display:block;}
-/*TODO - Select the the add-nav class with a descendant of active (class) with a descendant of a:hover (element) with a descendant of description (class)
-    Give it a display of none*/
+.add-nav .active a:hover .description{display:none;}
 .add-nav .holder{
 	display:table;
 	width:100%;
@@ -360,7 +358,7 @@ a:active{background-color:transparent;}
 	position:relative;
 	z-index:2;
 	min-height:783px;
-    /*TODO - Hide any overflow or we'll go down too far*/
+	overflow:hidden;
 }
 /* info-holder */
 .info-holder{
@@ -369,7 +367,7 @@ a:active{background-color:transparent;}
 	margin:0 auto;
 }
 .home .info-holder{
-    /* TODO- The text is not in the right position.  Add padding 0 top, 0 right, 363 bottom, 26 left */
+	padding: 0 0 363px 26px;
 	max-width:890px;
 }
 .info-holder .heading{
@@ -395,14 +393,14 @@ a:active{background-color:transparent;}
 	overflow:hidden;
 }
 .picture-block .text{
-    /* TODO - Our images are stacked vertically.  Change their display so they stack horizontally */
+	display:inline-block;
 	vertical-align:middle;
 	max-width:280px;
 	font-size:2.3em;
 	line-height:1em;
-    /* TODO - Add a font weight of 300 */
+	font-weight:300;
 	text-align:left;
-	/* TODO - Make the font color white */
+	color:#fff;
 }
 .picture-block img{
 	display:inline-block;
@@ -957,7 +955,7 @@ a:active{background-color:transparent;}
     padding:0 20px 0 20px;
     }
 .bottom-nav{
-	/* TODO - Fix the bottom nav's position */
+	position:fixed;
 	left:0;
 	bottom:0;
 	z-index:35;
@@ -1040,7 +1038,7 @@ a:active{background-color:transparent;}
 }
 .buy-block .title a:hover{
     text-decoration:none;
-    /* TODO - Change the background here to be a url '/content/icons.png' , Also: no-repeat 0 -610px;*/
+    background:url(/content/icons.png) no-repeat 0 -610px;
 }
 .home .buy-block .title a{
 	background:url(/content/icon-mail.png) no-repeat 0 11px;
@@ -1698,23 +1696,25 @@ a:active{background-color:transparent;}
 .addthis_toolbox a {margin:0 15px 0 0;} 
 .error {color: #b22217;}
 .price-list{
-    /*TODO - Position this absolutely.  Right 174px.  bottom: 52px*/
+	position:absolute;
+	right:174px;
+	bottom:52px;
 	margin:0 -80px 0 0;
 	padding:0;
 	font-size:16px;
 	line-height:19px;
-	/*TODO - text-transform with a value of uppercase will make this text always be uppercase*/
-	/*TODO - no bullet points - Hint: say none to, list-style*/
+	text-transform:uppercase;
+	list-style:none;
 	text-align:right;
 	overflow:hidden;
 }
 .price-list li{
-	/*TODO - li items are display block by default.  We want these to stack horizontally*/
+	display:inline-block;
 	vertical-align:middle;
 	margin:0 81px 0 0;
 }
 .price-list .price{
-	/*TODO - Now that we're inside a list item, let's go back to block display so items move down to new lines*/
+	display:block;
 	font-size:48px;
 	line-height:48px;
 	font-weight:bold;
@@ -1797,8 +1797,8 @@ a:active{background-color:transparent;}
 	margin:0 7px 0 0;
 }
 .multi-ticket-list .mark{
-	/*TODO - Make the font-size equal to 48*/
-    /*TODO - We want a static line height of 52 pixels*/
+	font-size:48px;
+	line-height:52px;
 	font-weight:300;
 	margin:0 7px 0 0;
 }
@@ -1807,17 +1807,29 @@ a:active{background-color:transparent;}
 	min-width:27px;
 	min-height:27px;
 	font-weight:bold;
-	/*TODO - Make the background black (#000) */
-    /*TODO - Add a border-radius of 50% */
+	background:#000;
+	border-radius:50%;
 	overflow:hidden;
 	color:#fff;
 	text-transform:none;
-	/*TODO - add a box-sizing with a value of border-box*/
+	box-sizing:border-box;
 	text-align:center;
 	margin-left:35px;
 }
 /* media queries */
 
+/* TODO - Let's add our first media query
+
+@media is the key word
+This should work on 'only devices with screens' aka - no print
+AND
+where the max-width: is 1330px or less
+This looks like this:
+@media only screen and (max-width: 1330px){
+    Inside here add a selector for  .home .add-nav em
+		Set the font-size to 24px
+		Set the line-height to 27px
+}
 
 #wuf-adv { display: none !important; }
 
