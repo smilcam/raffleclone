@@ -120,8 +120,8 @@ a:active{background-color:transparent;}
 .header-frame,
 .header-area{
 	max-width:1000px;
-	margin:0 auto;
-	position:relative;
+	/*TODO - We need some margin! - a value of 0 auto will tell the margin to auto calculate*/
+	/*TODO - We have some absolute children, so we need to set our position to relative*/
 	z-index:20;
 }
 .header-frame{min-height:550px;}
@@ -192,13 +192,12 @@ a:active{background-color:transparent;}
 }
 /* nav-block */
 .nav-block{
-	position:fixed;
-	top:70px;
+	/*TODO: Add the appropriate position - 70px*/
 	margin:0 0 0 10px;
 	z-index:2;
 	width:182px;
 	background:url(/content/bg-nav-block.png) no-repeat;
-	padding:52px 0 0;
+	/*TODO: Let's add some padding to the top - 52px worth*/
 	opacity:0.8;
 }
 .nav-block .holder{
